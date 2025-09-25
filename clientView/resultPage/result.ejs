@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result Page</title>
+        <link rel="stylesheet" href="/resultPage/result.css">
+    </head>
+    <body>
+        <div class="result-bg-container">
+            <h1>Your information has been submitted successfully!</h1>
+            <div>
+                <p><span>Name:</span> <%= name %></p>
+                <p><span>Gender:</span> <%= gender %></p>
+                <p><span>Age:</span> <%= age %></p>
+                <p><span>Phone:</span> <%= phone %></p>
+                <p><span>Email:</span> <%= email %></p>
+                <button onclick="location.href='/'">Submit another response</button>
+            </div>
+        </div>
+    </body>
+</html>
