@@ -21,8 +21,8 @@ app.get('/', (request, response) => {
 
 // POST route
 app.post('/submit', (request, response) => {
-    const { name, gender, age, phone, email } = request.body;
-    response.render('resultPage/result', { name, gender, age, phone, email });
+    const { name, gender, age, phone, email, address } = request.body;
+    response.render('resultPage/result', { name, gender, age, phone, email, address });
 });
 
 app.listen(port, () => {
